@@ -1,0 +1,71 @@
+$background: #1a4158
+$foreground: #fff1d4
+$page-width: 800px
+
+@import "normalize"
+
+.left
+  float: left
+
+.right
+  float: right
+
+a
+  color: $foreground
+  text-decoration: none
+
+body, html
+  color: $foreground
+  background-color: $background
+  width: 100%
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  // font-size: 12px
+  height: 100%
+
+#header
+  color: $foreground
+  background-color: $background
+  margin: 0
+  padding: 0
+  width: 100%
+
+  h1
+    font-size: 1em
+    font-weight: normal
+    margin: 0
+    padding: 0.5em
+
+  h2
+    font-size: 1em
+    font-weight: normal
+    margin: 0
+    padding: 0.5em
+
+#footer
+  color: $foreground
+  background-color: $background
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+
+  p
+    font-size: 1em
+    padding: 0.5em
+    text-align: center
+
+#content
+  margin: 0 auto
+  padding: 0
+  width: $page-width
+
+  img
+    width: 100%
+    padding: 0
+    margin: 0
+
+@media (max-width: $page-width)
+  #content
+    margin: 0
+    padding: 0
+    width: 100%
